@@ -1,0 +1,27 @@
+{
+  "name": "ai-challenge",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "npm run dev --workspace web",
+    "dev:api": "npm run dev --workspace api",
+    "build": "npm run build --workspace web && npm run build --workspace api",
+    "lint": "npm run lint --workspace web && npm run lint --workspace api",
+    "typecheck": "npm run typecheck --workspace web && npm run typecheck --workspace api",
+    "check": "npm run lint && npm run typecheck",
+    "test": "npm run test:web && npm run test:api",
+    "test:web": "npm run test --workspace web",
+    "test:api": "npm run test --workspace api"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "description": "Base de desafio fullstack com Next.js e Express",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

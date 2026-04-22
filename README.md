@@ -1,6 +1,6 @@
-# Dnautto Challenge Shell
+# Desafio AI
 
-Base fullstack para desafio técnico de 1 dia, sem módulo inicial pré-configurado.
+Base fullstack para desafio técnico.
 
 ## Estrutura
 
@@ -32,9 +32,3 @@ npm run check
 npm run build
 npm run test:api
 ```
-
-## Status atual
-
-- Carcaça pronta (arquitetura, scripts e endpoint de health).
-- Sem módulo de negócio inicial.
-- Teste mínimo disponível para `health check` da API.
